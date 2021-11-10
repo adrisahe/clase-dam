@@ -11,8 +11,20 @@ public class Alumno {
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        nombre = nombreCompleto;
-        numeroMatricula = numeroMatriculaAlumno;
+        nombreCompleto.length();
+        numeroMatriculaAlumno.length();
+        if (nombreCompleto.length() < 3) {
+            System.out.println("Error, menos de tres caracteres");
+        }
+        else {
+            nombre = nombreCompleto;
+        }
+        if (numeroMatriculaAlumno.length() < 4) {
+            System.out.println("Error, menos de cuatro caracteres");
+        }
+        else { 
+            numeroMatricula = numeroMatriculaAlumno;
+        }
         edad = edadAlumno;
     }
 
@@ -36,6 +48,7 @@ public class Alumno {
     public void imprimeDetalles() {
         System.out.println(nombre + " (" + numeroMatricula + ") - " + edad + " años");
     }
+
     
     /**
      * Devuelve el nombre de usuario que el alumno debe configurar
