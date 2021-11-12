@@ -15,14 +15,10 @@ public class Alumno {
         numeroMatriculaAlumno.length();
         if (nombreCompleto.length() < 3) {
             System.out.println("Error, menos de tres caracteres");
-        }
-        else {
             nombre = nombreCompleto;
         }
         if (numeroMatriculaAlumno.length() < 4) {
             System.out.println("Error, menos de cuatro caracteres");
-        }
-        else { 
             numeroMatricula = numeroMatriculaAlumno;
         }
         edad = edadAlumno;
