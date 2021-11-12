@@ -13,15 +13,15 @@ public class Alumno {
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
         nombreCompleto.length();
         numeroMatriculaAlumno.length();
+        nombre = nombreCompleto;
+        numeroMatricula = numeroMatriculaAlumno;
+        edad = edadAlumno;
         if (nombreCompleto.length() < 3) {
             System.out.println("Error, menos de tres caracteres");
-            nombre = nombreCompleto;
         }
         if (numeroMatriculaAlumno.length() < 4) {
-            System.out.println("Error, menos de cuatro caracteres");
-            numeroMatricula = numeroMatriculaAlumno;
+            System.out.println("Error, menos de cuatro caracteres");   
         }
-        edad = edadAlumno;
     }
 
     /**
