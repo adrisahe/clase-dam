@@ -51,6 +51,20 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public String getNombreUsuarioGithub() {
-        return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
+        String aDevolver = "alumno nuevo " + "| " + "5555 predeterminada" ;
+        nombre.length();
+        numeroMatricula.length();
+        if (nombre.length() > 2) {
+            aDevolver = nombre.substring(0, 3) + " | " + "5555 predeterminada";
+        }
+        if (numeroMatricula.length() > 3) {
+            aDevolver = "alumno nuevo" + " | " + numeroMatricula.substring(0, 4);
+        }
+        if (nombre.length() > 2) {
+            if (numeroMatricula.length() > 3) {
+                aDevolver = nombre.substring(0, 3) + " | " + numeroMatricula.substring(0, 4);
+            }
+        }
+        return aDevolver;
     }
 }
