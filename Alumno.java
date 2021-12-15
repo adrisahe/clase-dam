@@ -6,6 +6,7 @@ public class Alumno {
     private String numeroMatricula;
     // la edad del alumno
     private int edad;
+    
 
     /**
      * Crea un alumno nuevo
@@ -42,7 +43,7 @@ public class Alumno {
      * Imprime por pantalla los detalles del alumno
      */
     public void imprimeDetalles() {
-        System.out.println(nombre + " (" + numeroMatricula + ") - " + edad + " aÃ±os");
+        System.out.println(nombre + " (" + numeroMatricula + ") - " + edad + " años");
     }
 
     
@@ -51,7 +52,7 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public String getNombreUsuarioGithub() {
-        String aDevolver = nombre + numeroMatricula ;
+        String aDevolver = nombre + numeroMatricula;
         if (nombre.length() > 2) {
             aDevolver = nombre.substring(0, 3) + numeroMatricula;
         }
@@ -64,5 +65,13 @@ public class Alumno {
             }
         }
         return aDevolver;
+    }
+    
+    public String getNumeroMatricula() {
+        return numeroMatricula;
+    }
+    
+    public int getEdad() {
+        return edad;
     }
 }

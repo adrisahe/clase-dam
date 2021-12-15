@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class ClaseDam {
@@ -71,5 +72,14 @@ public class ClaseDam {
             alumno.imprimeDetalles();
         }
         System.out.println("Numero de alumnos: " + getNumeroDeAlumnos());
+    }
+    
+    public void imprimirListaNumeradaDeAlumnos()
+    {
+        int posicion = 0;
+        for(Alumno nuevoAlumno : alumnos){
+            posicion = posicion + 1;
+            System.out.println(posicion + ". " + nuevoAlumno.getNombre() + " (" + nuevoAlumno.getNumeroMatricula() + ") " + "- " + nuevoAlumno.getEdad() + " años" );
+        }
     }
 }
